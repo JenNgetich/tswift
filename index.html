@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Class Directory</title>
+<!--   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/tswift.css">
+  <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=League+Script' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="app-container"></div>
+  
+    <div class="verse_container">
+
+    </div>
+  
+    <div class="footer">
+      <a href="#">About</a>
+      <img id="heart" src="http://kloopd.com/users/1/heart1323793777.png">
+      <a href="#">Stuff</a>
+      <img id="heart" src="http://kloopd.com/users/1/heart1323793777.png">
+      <a href="#">Other Stuff</a>
+      <img id="heart"  src="http://kloopd.com/users/1/heart1323793777.png">
+    </div>
+
+</div>
+
+
+<!-- 
+ ___  ___  _   _  ___ _     _  ___  ___  __ 
+|_ _|| __|| \_/ || o \ |   / \|_ _|| __|/ _|
+ | | | _| | \_/ ||  _/ |_ | o || | | _| \_ \
+ |_| |___||_| |_||_| |___||_n_||_| |___||__/
+
+ -->
+
+ <!-- App-View: Home Base -->
+  <script id="app-template" type="text/template">
+  
+    <h1>Her Next Single</h1>
+
+    <div class="left_panel">
+      <img id="preview_img" src="img/preview.jpg">
+      <button class="do-again">Do It Again</button>
+      <button class="swap">Swap A Line </button>
+      <button class="share">Share This Song</button>
+    </div>
+  
+  </script>
+
+
+ <!-- Lyric-View: New Song -->
+  <script id="lyric-template" type="text/template">
+      <h2>VERSE 1</h2>
+      <div id="verseOne_div"></div>
+      <h2>CHORUS</h2>
+      <div id="chorus1_div"></div>
+      <br><div id="chorus2_div"></div>
+      <h2>VERSE 2</h2>
+      <div id="verseTwo_div"></div>
+      <h2>BRIDGE</h2>
+      <div id="bridge_div"></div>
+      <h2>CHORUS</h2>
+      <div id="chorus1_div2"></div>
+      <br><div id="chorus2_div2"></div>
+  </script>
+
+  <!-- Swap-View: Edit one line -->
+  <script id="swap-template" type="text/template">
+      <p>INSTRUCTIONS: Click arrow to swap out a line</p>
+      <h2>VERSE 1</h2>
+      <div id="verseOne_div"></div>
+      <h2>CHORUS</h2>
+      <div id="chorus1_div"></div>
+      <br><div id="chorus2_div"></div>
+      <h2>VERSE 2</h2>
+      <div id="verseTwo_div"></div>
+      <h2>BRIDGE</h2>
+      <div id="bridge_div"></div>
+      <button class="save">Save</button>
+  </script>
+
+  <!-- Do-Again-View -->
+  <script id="do-again-template" type="text/template">
+    DO IT AGAIN 
+  </script>
+
+  <!-- Do-Again-View -->
+  <script id="share-template" type="text/template">
+    SHARE ME 
+  </script>
+
+
+<!--
+ __  __  ___ _  ___ ___ __ 
+/ _|/ _|| o \ || o \_ _/ _|
+\_ ( (_ |   / ||  _/| |\_ \
+|__/\__||_|\\_||_|  |_||__/
+
+ -->
+
+<!-- Libraries -->
+  <script src="jquery-2.0.1.min.js"></script>
+  <script src="underscore.js"></script> 
+  <script src="backbone.js"></script>
+  <script src="bootstrap.js"></script> 
+
+
+<!-- Content -->
+  <script src="setup/newsong.js"></script>
+  <script src="setup/separatebysound.js"></script>
+  <script src="setup/unique-ending-words.js"></script> 
+
+
+<!-- views -->
+ <script src="views/app-view.js"></script>
+ <script src="views/lyric-view.js"></script> 
+ <script src="views/swap-view.js"></script> 
+
+
+
+</body>
+</html>
